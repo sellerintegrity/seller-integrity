@@ -16,10 +16,12 @@ document.addEventListener('DOMContentLoaded', () => {
     revealElements.forEach(el => revealObserver.observe(el));
 
     /* =========================================
-       2. EMERGENCY CASE DIAGNOSTIC (Interactive Pills)
+       2. EMERGENCY CASE DIAGNOSTIC (Toggle & Re-Generate)
        ========================================= */
     let selectedIssue = null;
     let selectedStatus = null;
+    // Expose globally so review-form links can grab it
+    window.selectedIssue = null; 
     
     const issueCards = document.querySelectorAll('#diag-q1 .i-card');
     const statusCards = document.querySelectorAll('#diag-q2 .i-card');
@@ -49,10 +51,9 @@ document.addEventListener('DOMContentLoaded', () => {
             document.getElementById('rep-guardian').innerText = `Assigned Guardian: ${guardian}`;
             document.getElementById('rep-risk').innerText = risk;
             
-            let riskClass = 'value font-bold';
-            if(risk === 'Critical' || risk === 'Severe') riskClass += ' theme-crimson';
-            else if(risk === 'High') riskClass += ' theme-royal';
-            else riskClass += ' theme-gold';
+            let riskClass = 'theme-crimson font-bold';
+            if(risk === 'High') riskClass = 'theme-royal font-bold';
+            else if(risk === 'Moderate') riskClass = 'theme-gold font-bold';
             document.getElementById('rep-risk').className = riskClass;
 
             document.getElementById('rep-docs').innerText = docs;
@@ -80,11 +81,13 @@ document.addEventListener('DOMContentLoaded', () => {
             if (card.classList.contains('active')) {
                 card.classList.remove('active');
                 selectedIssue = null;
+                window.selectedIssue = null;
                 checkDiagnosticComplete();
             } else {
                 issueCards.forEach(c => c.classList.remove('active'));
                 card.classList.add('active');
                 selectedIssue = card.getAttribute('data-issue');
+                window.selectedIssue = selectedIssue;
                 
                 if (selectedIssue && selectedStatus) {
                     reportContainer.classList.add('hidden');
@@ -158,23 +161,20 @@ document.addEventListener('DOMContentLoaded', () => {
         const circLayout = document.querySelector('.circular-layout');
         const mNavHTML = `
             <div class="mobile-nexus-select" style="display:flex; overflow-x:auto; gap:10px; margin-bottom:15px; scrollbar-width:none; padding-bottom:10px;">
-                <button class="m-btn active" data-guardian="g-reinstator" style="padding:10px; background:var(--glass-bg); border:1px solid var(--text-primary); border-radius:6px; color:var(--text-primary); white-space:nowrap; font-size:12px;">The Reinstator</button>
-                <button class="m-btn" data-guardian="g-investigator" style="padding:10px; background:transparent; border:1px solid var(--glass-border); border-radius:6px; color:var(--text-secondary); white-space:nowrap; font-size:12px;">The Investigator</button>
-                <button class="m-btn" data-guardian="g-nexus" style="padding:10px; background:transparent; border:1px solid var(--glass-border); border-radius:6px; color:var(--text-secondary); white-space:nowrap; font-size:12px;">The Nexus</button>
-                <button class="m-btn" data-guardian="g-guardian" style="padding:10px; background:transparent; border:1px solid var(--glass-border); border-radius:6px; color:var(--text-secondary); white-space:nowrap; font-size:12px;">The Guardian</button>
-                <button class="m-btn" data-guardian="g-verifier" style="padding:10px; background:transparent; border:1px solid var(--glass-border); border-radius:6px; color:var(--text-secondary); white-space:nowrap; font-size:12px;">The Verifier</button>
+                <button class="mobile-guardian-btn active" data-guardian="g-reinstator">The Reinstator</button>
+                <button class="mobile-guardian-btn" data-guardian="g-investigator">The Investigator</button>
+                <button class="mobile-guardian-btn" data-guardian="g-nexus">The Nexus</button>
+                <button class="mobile-guardian-btn" data-guardian="g-guardian">The Guardian</button>
+                <button class="mobile-guardian-btn" data-guardian="g-verifier">The Verifier</button>
             </div>
         `;
         circLayout.insertAdjacentHTML('afterbegin', mNavHTML);
 
-        const mBtns = document.querySelectorAll('.m-btn');
+        const mBtns = document.querySelectorAll('.mobile-guardian-btn');
         mBtns.forEach(btn => {
             btn.addEventListener('click', () => {
-                mBtns.forEach(b => { b.classList.remove('active'); b.style.background = 'transparent'; b.style.color = 'var(--text-secondary)'; b.style.borderColor = 'var(--glass-border)'; });
+                mBtns.forEach(b => b.classList.remove('active'));
                 btn.classList.add('active');
-                btn.style.background = 'var(--glass-bg)';
-                btn.style.color = 'var(--text-primary)';
-                btn.style.borderColor = 'var(--text-primary)';
                 updateGuardianPanel(btn.getAttribute('data-guardian'));
             });
         });
@@ -296,15 +296,15 @@ document.addEventListener('DOMContentLoaded', () => {
     });
 
     /* =========================================
-       6. MAGNETIC BUTTONS (Desktop)
+       6. MAGNETIC BUTTONS (Desktop Hover)
        ========================================= */
     const magneticBtns = document.querySelectorAll('.magnetic-btn');
     magneticBtns.forEach(btn => {
         btn.addEventListener('mousemove', (e) => {
             if(window.innerWidth > 768) {
                 const position = btn.getBoundingClientRect();
-                const x = e.pageX - position.left - position.width / 2;
-                const y = e.pageY - position.top - position.height / 2;
+                const x = e.clientX - position.left - position.width / 2;
+                const y = e.clientY - position.top - position.height / 2;
                 btn.style.transform = `translate(${x * 0.15}px, ${y * 0.15}px)`;
             }
         });
@@ -333,7 +333,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
             // Scenario A: Clicked from Guardian Panel
             if (link.closest('#guardians')) {
-                const activeGuardian = document.querySelector('.orbit-node.active') || document.querySelector('.m-btn.active');
+                const activeGuardian = document.querySelector('.orbit-node.active') || document.querySelector('.mobile-guardian-btn.active');
                 if(activeGuardian) {
                     const gId = activeGuardian.getAttribute('data-guardian');
                     const gMap = {
@@ -353,7 +353,7 @@ document.addEventListener('DOMContentLoaded', () => {
             } 
             // Scenario B: Clicked from Diagnostic Results
             else if (link.closest('#matcher-result')) {
-                if (selectedIssue) {
+                if (window.selectedIssue) {
                     const issueMap = {
                         'suspension': 'Suspension',
                         'section3': 'Section 3',
@@ -362,7 +362,7 @@ document.addEventListener('DOMContentLoaded', () => {
                         'verification': 'Growth',
                         'growth': 'Growth'
                     };
-                    const issueInput = document.querySelector(`input[name="issue"][value="${issueMap[selectedIssue]}"]`);
+                    const issueInput = document.querySelector(`input[name="issue"][value="${issueMap[window.selectedIssue]}"]`);
                     if (issueInput) {
                         issueInput.checked = true;
                         autoAdvance = true;
