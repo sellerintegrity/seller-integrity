@@ -1,891 +1,690 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-J3BC7M7PFM"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-
-  gtag('config', 'G-J3BC7M7PFM');
-</script>
-
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Seller Integrity provides expert Amazon account reinstatement, compliance, and growth strategies.">
-    <title>Seller Integrity | The Order of Integrity</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>Seller Integrity | Amazon Seller Protection Platform</title>
     <link rel="icon" href="images/SI Logo.png" type="image/png">
-    <link rel="stylesheet" href="styles.css">
+    
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Lora:ital,wght@0,400;0,500;0,600;0,700;1,400&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet">
+    
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
 
-    <nav class="navbar" id="navbar">
-        <div class="nav-container">
+    <!-- Soft Aurora Background -->
+    <div class="aurora-bg">
+        <div class="aurora aurora-1"></div>
+        <div class="aurora aurora-2"></div>
+    </div>
+
+    <!-- Desktop Navigation -->
+    <nav class="desktop-nav">
+        <div class="container nav-container">
             <a href="#" class="logo">
-                <img src="images/SI Logo.png" alt="Seller Integrity Logo" class="logo-img">
-                <div class="logo-text-wrapper">
-                    <span class="logo-text">SELLER INTEGRITY</span>
-                    <span class="logo-subtext">- Protecting Accounts. Restoring Trust. -</span>
+                <img src="images/SI Logo.png" alt="Seller Integrity" class="logo-img">
+                <div class="logo-text-stack">
+                    <span class="logo-title">SELLER INTEGRITY</span>
+                    <span class="logo-subtitle">Amazon Seller Advisory</span>
                 </div>
             </a>
-            
-            <button class="hamburger-menu" id="hamburger-menu" aria-label="Toggle Navigation">
-                <span class="bar top"></span>
-                <span class="bar middle"></span>
-                <span class="bar bottom"></span>
-            </button>
-            
-            <ul class="nav-links" id="nav-links">
-                <li><a href="#who-are-we">Who Are We</a></li>
-                <li><a href="#guardian-services">Guardian Services</a></li>
-                <li><a href="#success-stories">Success Stories</a></li>
-                <li><a href="#faqs">FAQs</a></li>
-                <li><a href="https://calendar.google.com/calendar/u/0/appointments/schedules/AcZssZ3WyABW2iWadpXasRge3Z5XcCo_2MC0HCfRRQhxCbnhroVLRH-lx-yMl7uhLAwYrICViEHsN75z" target="_blank" class="btn-nav">Schedule a Call</a></li>
-            </ul>
+            <div class="nav-links">
+                <a href="#matcher">Diagnostic</a>
+                <a href="#guardians">Guardians</a>
+                <a href="#situation">Situation Room</a>
+                <a href="#advisor">The Advisor</a>
+            </div>
+            <!-- Links to Google Calendar -->
+            <a href="https://calendar.google.com/calendar/u/0/appointments/schedules/AcZssZ3WyABW2iWadpXasRge3Z5XcCo_2MC0HCfRRQhxCbnhroVLRH-lx-yMl7uhLAwYrICViEHsN75z" target="_blank" class="btn-primary magnetic-btn">Schedule Consultation</a>
         </div>
     </nav>
 
+    <!-- Mobile Bottom App Navigation -->
+    <nav class="mobile-bottom-nav">
+        <a href="#" class="mobile-nav-item active">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"></path></svg>
+            <span>Home</span>
+        </a>
+        <a href="#matcher" class="mobile-nav-item">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="8"></circle><line x1="21" y1="21" x2="16.65" y2="16.65"></line></svg>
+            <span>Diagnostic</span>
+        </a>
+        <a href="#review-form" class="mobile-nav-item mobile-nav-cta">
+            <div class="cta-pulse"></div>
+            <svg viewBox="0 0 24 24" fill="none" stroke="#05060A" stroke-width="2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path></svg>
+        </a>
+        <a href="#guardians" class="mobile-nav-item">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="3" width="7" height="7"></rect><rect x="14" y="3" width="7" height="7"></rect><rect x="14" y="14" width="7" height="7"></rect><rect x="3" y="14" width="7" height="7"></rect></svg>
+            <span>Guardians</span>
+        </a>
+        <a href="#advisor" class="mobile-nav-item">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"></path><circle cx="12" cy="7" r="4"></circle></svg>
+            <span>Advisor</span>
+        </a>
+    </nav>
+
+    <!-- 1. HERO COMMAND CENTER -->
     <header class="hero">
-        <div class="hero-glow"></div>
-        <div class="hero-content">
-            
-            <div class="hero-hook-grid">
-                <a href="#guardian-services" class="hook-card" style="--card-accent: var(--color-maroon);">
-                    <span class="hook-icon">🚫</span>
-                    <h3 class="hook-title">Account Suspended?</h3>
-                    <p class="hook-desc">When your business stops, every minute matters.</p>
-                </a>
+        <div class="container hero-layout">
+            <div class="hero-content reveal">
+                <h1 class="hero-title">Your Amazon Business Deserves a <span class="text-gradient">Second Chance.</span></h1>
+                <p class="hero-subtitle">Former Amazon Professional helping sellers navigate suspensions, compliance reviews, policy violations, account health challenges, and business growth opportunities.</p>
                 
-                <a href="#guardian-services" class="hook-card" style="--card-accent: var(--color-maroon);">
-                    <span class="hook-icon">⚠️</span>
-                    <h3 class="hook-title">Section 3 Notification?</h3>
-                    <p class="hook-desc">Amazon is asking questions. Make sure you have the right answers.</p>
-                </a>
-                
-                <a href="#guardian-services" class="hook-card" style="--card-accent: var(--color-maroon);">
-                    <span class="hook-icon">🔗</span>
-                    <h3 class="hook-title">Related Account Issue?</h3>
-                    <p class="hook-desc">One account can impact another. Understand your options.</p>
-                </a>
-                
-                <a href="#guardian-services" class="hook-card" style="--card-accent: var(--color-maroon);">
-                    <span class="hook-icon">🛡️</span>
-                    <h3 class="hook-title">IP or Counterfeit Claim?</h3>
-                    <p class="hook-desc">Protect your listings, reputation, and account health.</p>
-                </a>
-                
-                <a href="#guardian-services" class="hook-card" style="--card-accent: var(--color-royal);">
-                    <span class="hook-icon">🚀</span>
-                    <h3 class="hook-title">New to Amazon?</h3>
-                    <p class="hook-desc">Build your business on a strong foundation from day one.</p>
-                </a>
-                
-                <a href="#guardian-services" class="hook-card" style="--card-accent: var(--color-royal);">
-                    <span class="hook-icon">👑</span>
-                    <h3 class="hook-title">Have a Brand?</h3>
-                    <p class="hook-desc">Increase visibility, strengthen protection, and drive growth.</p>
-                </a>
+                <!-- 2x2 Uniform Button Grid -->
+                <div class="hero-actions-grid">
+                    <a href="#review-form" class="btn-primary btn-hero-action magnetic-btn">Request Free Case Review</a>
+                    <a href="https://calendar.google.com/calendar/u/0/appointments/schedules/AcZssZ3WyABW2iWadpXasRge3Z5XcCo_2MC0HCfRRQhxCbnhroVLRH-lx-yMl7uhLAwYrICViEHsN75z" target="_blank" class="btn-secondary btn-hero-action magnetic-btn">Schedule Consultation</a>
+                    <a href="#guardians" class="btn-secondary btn-hero-action magnetic-btn">Deploy your Guardian</a>
+                    <a href="https://www.linkedin.com/in/shivani-goyal-ecommerce" target="_blank" class="btn-linkedin btn-hero-action magnetic-btn">
+                        <svg viewBox="0 0 24 24" fill="currentColor" width="16" height="16" style="margin-right: 6px;"><path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/></svg>
+                        Connect on LinkedIn
+                    </a>
+                </div>
             </div>
 
-            <div class="hero-cta-group">
-                <a href="#contact" class="btn-hero">Deploy your Guardian</a>
-                <a href="https://calendar.google.com/calendar/u/0/appointments/schedules/AcZssZ3WyABW2iWadpXasRge3Z5XcCo_2MC0HCfRRQhxCbnhroVLRH-lx-yMl7uhLAwYrICViEHsN75z" target="_blank" class="btn-hero btn-hero-secondary">Schedule a Call</a>
+            <!-- Rotating Crosshair Visual -->
+            <div class="hero-visual reveal">
+                <div class="hero-crosshair-ui">
+                    <div class="crosshair-spin-wrapper">
+                        <div class="crosshair-line line-h"></div>
+                        <div class="crosshair-line line-v"></div>
+                        <div class="crosshair-ring">
+                            <div class="ring-dot dot-tl"></div>
+                            <div class="ring-dot dot-tr"></div>
+                            <div class="ring-dot dot-bl"></div>
+                            <div class="ring-dot dot-br"></div>
+                        </div>
+                    </div>
+                    <div class="logo-box floating">
+                        <img src="images/SI Logo.png" alt="Seller Integrity Shield" class="main-shield">
+                    </div>
+                </div>
             </div>
-            
+        </div>
+        
+        <div class="trust-strip">
+            <div class="container strip-content">
+                <span>Former Amazon Professional</span><span class="dot"></span>
+                <span>9+ Years Experience</span><span class="dot"></span>
+                <span>Global Marketplace Expertise</span><span class="dot"></span>
+                <span>Independent Advisory Firm</span>
+            </div>
         </div>
     </header>
 
-    <section id="who-are-we" class="content-section bg-navy">
+    <!-- 2. EMERGENCY CASE DIAGNOSTIC (Interactive Pills) -->
+    <section id="matcher" class="section-padding bg-surface">
         <div class="container">
-            <div class="section-header">
-                <h2>Who Are We?</h2>
-                <div class="color-divider theme-silver"></div>
+            <div class="section-heading text-center reveal">
+                <h2>Emergency Case Diagnostic</h2>
+                <p>Select your operational parameters to generate an initial intelligence report and recovery strategy.</p>
             </div>
-            <div class="text-block">
-                <p>At Seller Integrity, we are more than consultants. We are experienced Amazon marketplace specialists dedicated to helping sellers navigate some of the platform's most complex challenges.</p>
-                <p>Built on firsthand experience within Amazon's Seller Partner Support (SPS) ecosystem, we understand how Amazon evaluates account performance, compliance concerns, operational risks, and seller behaviour. This perspective allows us to analyze issues beyond surface-level symptoms and focus on the underlying factors that influence Amazon's decision making process.</p>
-                <p>Our approach combines operational excellence, structured root-cause analysis, and data-driven precision. Our ultimate mission is to bridge the gap between sellers and Amazon's strict compliance matrices, bringing transparency, trust, and proven strategies to protect and scale your global e-commerce business.</p>
+            
+            <div class="diagnostic-ui reveal">
+                
+                <!-- Q1 -->
+                <div class="diag-group" id="diag-q1">
+                    <h3>1. What happened?</h3>
+                    <div class="interactive-cards">
+                        <div class="i-card" data-issue="suspension">Account Suspended</div>
+                        <div class="i-card" data-issue="section3">Section 3 Notification</div>
+                        <div class="i-card" data-issue="related">Related Account Issue</div>
+                        <div class="i-card" data-issue="ip">Intellectual Property Complaint</div>
+                        <div class="i-card" data-issue="verification">Verification Failure</div>
+                        <div class="i-card" data-issue="growth">Brand / Catalog Issue</div>
+                    </div>
+                </div>
+
+                <!-- Q2 -->
+                <div class="diag-group mt-4" id="diag-q2">
+                    <h3>2. Current Status</h3>
+                    <div class="interactive-cards">
+                        <div class="i-card" data-status="deactivated">Deactivated</div>
+                        <div class="i-card" data-status="at-risk">At Risk / Funds Held</div>
+                        <div class="i-card" data-status="listings">Listings Blocked</div>
+                        <div class="i-card" data-status="active">Active / Operational</div>
+                    </div>
+                </div>
+
+                <!-- Generated Report -->
+                <div id="diagnostic-report" class="diagnostic-report hidden">
+                    <div class="report-header border-bottom">
+                        <span class="badge theme-blue">INTELLIGENCE REPORT GENERATED</span>
+                        <h3 id="rep-guardian">Assigned Guardian: The Reinstator</h3>
+                    </div>
+                    <div class="report-body mt-4">
+                        <div class="res-row">
+                            <span class="label">RISK LEVEL</span>
+                            <span id="rep-risk" class="value theme-crimson font-bold">Critical</span>
+                        </div>
+                        <div class="res-row">
+                            <span class="label">REQUIRED DOCUMENTATION</span>
+                            <span id="rep-docs" class="value">Root Cause Proof & Plan of Action</span>
+                        </div>
+                        <div class="res-row mt-3">
+                            <span class="label">RECOMMENDED NEXT ACTION</span>
+                            <span id="rep-action" class="value">Immediate Appeal Development</span>
+                        </div>
+                        <div class="res-row-full mt-3">
+                            <span class="label mb-2" style="display:block;">SUGGESTED RECOVERY STRATEGY</span>
+                            <p id="rep-strategy">Do not submit a generic appeal. We must audit historical performance notifications related to your suspension issue, construct a data-driven root cause narrative, and map out compliant preventative measures before submission.</p>
+                        </div>
+                    </div>
+                    <div class="res-actions mt-4">
+                        <a href="#review-form" class="btn-primary">Request Specialist Review</a>
+                    </div>
+                </div>
+
             </div>
         </div>
     </section>
 
-    <section id="guardian-services" class="hall-section bg-black">
+    <!-- 3. SELLER PROTECTION NETWORK -->
+    <section id="network" class="section-padding">
         <div class="container">
-            <div class="section-header">
-                <h2>Guardian Divisions</h2>
-                <div class="color-divider theme-royal"></div>
-                <p class="classified-alert">Every Amazon Challenge Has a Guardian. Discover Yours Below.</p>
+            <div class="section-heading reveal">
+                <h2>Seller Protection Network</h2>
+                <p>Specialized teams dedicated to resolving Amazon account, compliance, and growth challenges.</p>
             </div>
 
-            <div class="division-category">
-                <div class="division-header" style="--div-theme: var(--color-maroon);">
-                    <div class="div-line"></div>
+            <div class="network-grid reveal">
+                <div class="network-card glass-panel border-top-crimson">
                     <h3>Recovery Division</h3>
-                    <p>Restoring access, value, and account standing.</p>
+                    <p class="net-desc">Focused on restoring access and appealing severe account enforcement actions.</p>
+                    <ul class="net-list">
+                        <li>Account Suspensions</li>
+                        <li>Section 3 Reviews</li>
+                        <li>Related Accounts</li>
+                        <li>A-to-Z Claims</li>
+                    </ul>
                 </div>
-                
-                <div class="guardian-grid">
-                    <div class="guardian-card" style="--card-color: var(--color-maroon);">
-                        <div class="guardian-inner">
-                            <div class="guardian-front">
-                                <div class="guardian-avatar-frame">
-                                    <div class="tech-corner top-left"></div>
-                                    <div class="tech-corner bottom-right"></div>
-                                    <img src="images/g-1.jpeg" alt="The Reinstator" class="avatar-img">
-                                </div>
-                                <span class="service-name">Account Reinstatement</span>
-                                <h3>The Reinstator</h3>
-                            </div>
-                            <div class="guardian-back">
-                                <h4>The Reinstator</h4>
-                                <span class="guardian-role">Guardian of Recovery</span>
-                                <p class="guardian-desc">Restores suspended Amazon accounts by uncovering root causes and developing strategic Plans of Action.</p>
-                                <span class="protects-title">Protects Against:</span>
-                                <ul class="protects-list">
-                                    <li>Account Suspensions</li>
-                                    <li>Account Deactivations</li>
-                                </ul>
-                                <a href="#contact" class="btn-summon" data-service="Recovery Division">Get Expert Help</a>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="guardian-card" style="--card-color: var(--color-maroon);">
-                        <div class="guardian-inner">
-                            <div class="guardian-front">
-                                <div class="guardian-avatar-frame">
-                                    <div class="tech-corner top-left"></div>
-                                    <div class="tech-corner bottom-right"></div>
-                                    <img src="images/g-2.jpeg" alt="The Investigator" class="avatar-img">
-                                </div>
-                                <span class="service-name">Section 3 Appeals</span>
-                                <h3>The Investigator</h3>
-                            </div>
-                            <div class="guardian-back">
-                                <h4>The Investigator</h4>
-                                <span class="guardian-role">Guardian of Truth</span>
-                                <p class="guardian-desc">Analyzes Amazon notifications and account history to discover true root causes.</p>
-                                <span class="protects-title">Protects Against:</span>
-                                <ul class="protects-list">
-                                    <li>Section 3 Reviews</li>
-                                    <li>Investigations</li>
-                                </ul>
-                                <a href="#contact" class="btn-summon" data-service="Recovery Division">Get Expert Help</a>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="guardian-card" style="--card-color: var(--color-maroon);">
-                        <div class="guardian-inner">
-                            <div class="guardian-front">
-                                <div class="guardian-avatar-frame">
-                                    <div class="tech-corner top-left"></div>
-                                    <div class="tech-corner bottom-right"></div>
-                                    <img src="images/g-3.jpeg" alt="The Nexus" class="avatar-img">
-                                </div>
-                                <span class="service-name">Related Account Appeals</span>
-                                <h3>The Nexus</h3>
-                            </div>
-                            <div class="guardian-back">
-                                <h4>The Nexus</h4>
-                                <span class="guardian-role">Guardian of Connections</span>
-                                <p class="guardian-desc">Deciphers Amazon's linking matrices to uncover or refute related account violations.</p>
-                                <span class="protects-title">Protects Against:</span>
-                                <ul class="protects-list">
-                                    <li>Multiple Account Links</li>
-                                    <li>Account Linkage Issues</li>
-                                </ul>
-                                <a href="#contact" class="btn-summon" data-service="Recovery Division">Get Expert Help</a>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="guardian-card" style="--card-color: var(--color-maroon);">
-                        <div class="guardian-inner">
-                            <div class="guardian-front">
-                                <div class="guardian-avatar-frame">
-                                    <div class="tech-corner top-left"></div>
-                                    <div class="tech-corner bottom-right"></div>
-                                    <img src="images/g-14.jpeg" alt="The Quartermaster" class="avatar-img">
-                                </div>
-                                <span class="service-name">FBA Logistics</span>
-                                <h3>The Quartermaster</h3>
-                            </div>
-                            <div class="guardian-back">
-                                <h4>The Quartermaster</h4>
-                                <span class="guardian-role">Guardian of Logistics</span>
-                                <p class="guardian-desc">Resolves critical logistical blocks, removal delays, and stranded inventory conflicts.</p>
-                                <span class="protects-title">Protects Against:</span>
-                                <ul class="protects-list">
-                                    <li>Stranded Inventory</li>
-                                    <li>Removal Delays</li>
-                                </ul>
-                                <a href="#contact" class="btn-summon" data-service="Recovery Division">Get Expert Help</a>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="guardian-card" style="--card-color: var(--color-maroon);">
-                        <div class="guardian-inner">
-                            <div class="guardian-front">
-                                <div class="guardian-avatar-frame">
-                                    <div class="tech-corner top-left"></div>
-                                    <div class="tech-corner bottom-right"></div>
-                                    <img src="images/g-16.jpeg" alt="The Advocate" class="avatar-img">
-                                </div>
-                                <span class="service-name">Dispute Resolution</span>
-                                <h3>The Advocate</h3>
-                            </div>
-                            <div class="guardian-back">
-                                <h4>The Advocate</h4>
-                                <span class="guardian-role">Guardian of Representation</span>
-                                <p class="guardian-desc">Directly resolves complex customer disputes and provides critical representation during A-to-Z claims.</p>
-                                <span class="protects-title">Protects Against:</span>
-                                <ul class="protects-list">
-                                    <li>A-to-Z Claims</li>
-                                    <li>Customer Disputes</li>
-                                </ul>
-                                <a href="#contact" class="btn-summon" data-service="Recovery Division">Get Expert Help</a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <div class="division-category">
-                <div class="division-header" style="--div-theme: var(--color-silver);">
-                    <div class="div-line"></div>
+                <div class="network-card glass-panel border-top-royal">
                     <h3>Compliance Division</h3>
-                    <p>Defending policy, health, and market access.</p>
+                    <p class="net-desc">Focused on listing protection, intellectual property, and overall account health.</p>
+                    <ul class="net-list">
+                        <li>IP Complaints</li>
+                        <li>Policy Violations</li>
+                        <li>Restricted Products</li>
+                        <li>Account Health</li>
+                    </ul>
                 </div>
-                
-                <div class="guardian-grid">
-                    <div class="guardian-card" style="--card-color: var(--color-silver);">
-                        <div class="guardian-inner">
-                            <div class="guardian-front">
-                                <div class="guardian-avatar-frame">
-                                    <div class="tech-corner top-left"></div>
-                                    <div class="tech-corner bottom-right"></div>
-                                    <img src="images/g-6.jpeg" alt="The Guardian" class="avatar-img">
-                                </div>
-                                <span class="service-name">Intellectual Property</span>
-                                <h3>The Guardian</h3>
-                            </div>
-                            <div class="guardian-back">
-                                <h4>The Guardian</h4>
-                                <span class="guardian-role">Guardian of Brands</span>
-                                <p class="guardian-desc">Stands between sellers and devastating intellectual property complaints (Trademark, Copyright).</p>
-                                <span class="protects-title">Protects Against:</span>
-                                <ul class="protects-list">
-                                    <li>IP Complaints</li>
-                                    <li>Rights Disputes</li>
-                                </ul>
-                                <a href="#contact" class="btn-summon" data-service="Compliance Division">Get Expert Help</a>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="guardian-card" style="--card-color: var(--color-silver);">
-                        <div class="guardian-inner">
-                            <div class="guardian-front">
-                                <div class="guardian-avatar-frame">
-                                    <div class="tech-corner top-left"></div>
-                                    <div class="tech-corner bottom-right"></div>
-                                    <img src="images/g-4.jpeg" alt="The Sentinel" class="avatar-img">
-                                </div>
-                                <span class="service-name">Account Health Management</span>
-                                <h3>The Sentinel</h3>
-                            </div>
-                            <div class="guardian-back">
-                                <h4>The Sentinel</h4>
-                                <span class="guardian-role">Guardian of Account Health</span>
-                                <p class="guardian-desc">Constant preventative monitoring and risk assessment to prevent critical health deterioration.</p>
-                                <span class="protects-title">Protects Against:</span>
-                                <ul class="protects-list">
-                                    <li>Policy Violations</li>
-                                    <li>Performance Risks</li>
-                                </ul>
-                                <a href="#contact" class="btn-summon" data-service="Compliance Division">Get Expert Help</a>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="guardian-card" style="--card-color: var(--color-silver);">
-                        <div class="guardian-inner">
-                            <div class="guardian-front">
-                                <div class="guardian-avatar-frame">
-                                    <div class="tech-corner top-left"></div>
-                                    <div class="tech-corner bottom-right"></div>
-                                    <img src="images/g-9.jpeg" alt="The Arbiter" class="avatar-img">
-                                </div>
-                                <span class="service-name">Policy & Compliance</span>
-                                <h3>The Arbiter</h3>
-                            </div>
-                            <div class="guardian-back">
-                                <h4>The Arbiter</h4>
-                                <span class="guardian-role">Guardian of Compliance</span>
-                                <p class="guardian-desc">Interprets Amazon's strict compliance matrices, providing direct guidance on complex policy enforcements.</p>
-                                <span class="protects-title">Protects Against:</span>
-                                <ul class="protects-list">
-                                    <li>Policy Enforcements</li>
-                                    <li>Compliance Matrices</li>
-                                </ul>
-                                <a href="#contact" class="btn-summon" data-service="Compliance Division">Get Expert Help</a>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="guardian-card" style="--card-color: var(--color-silver);">
-                        <div class="guardian-inner">
-                            <div class="guardian-front">
-                                <div class="guardian-avatar-frame">
-                                    <div class="tech-corner top-left"></div>
-                                    <div class="tech-corner bottom-right"></div>
-                                    <img src="images/g-10.jpeg" alt="The Gatekeeper" class="avatar-img">
-                            </div>
-                                <span class="service-name">Restricted Products</span>
-                                <h3>The Gatekeeper</h3>
-                            </div>
-                            <div class="guardian-back">
-                                <h4>The Gatekeeper</h4>
-                                <span class="guardian-role">Guardian of Restricted Access</span>
-                                <p class="guardian-desc">Manages market access for regulated products and restricted categories through rigorous documentation.</p>
-                                <span class="protects-title">Protects Against:</span>
-                                <ul class="protects-list">
-                                    <li>Listing Restrictions</li>
-                                    <li>Category Bans</li>
-                                </ul>
-                                <a href="#contact" class="btn-summon" data-service="Compliance Division">Get Expert Help</a>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="guardian-card" style="--card-color: var(--color-silver);">
-                        <div class="guardian-inner">
-                            <div class="guardian-front">
-                                <div class="guardian-avatar-frame">
-                                    <div class="tech-corner top-left"></div>
-                                    <div class="tech-corner bottom-right"></div>
-                                    <img src="images/g-15.jpeg" alt="The Watchman" class="avatar-img">
-                            </div>
-                                <span class="service-name">Performance Notifications</span>
-                                <h3>The Watchman</h3>
-                            </div>
-                            <div class="guardian-back">
-                                <h4>The Watchman</h4>
-                                <span class="guardian-role">Guardian of Alerts</span>
-                                <p class="guardian-desc">Active monitoring and interpretation of emerging marketplace risks before warnings escalate.</p>
-                                <span class="protects-title">Protects Against:</span>
-                                <ul class="protects-list">
-                                    <li>Policy Warnings</li>
-                                    <li>Emerging Risks</li>
-                                </ul>
-                                <a href="#contact" class="btn-summon" data-service="Compliance Division">Get Expert Help</a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <div class="division-category">
-                <div class="division-header" style="--div-theme: var(--color-royal);">
-                    <div class="div-line"></div>
+                <div class="network-card glass-panel border-top-silver">
                     <h3>Authenticity Division</h3>
-                    <p>Securing supply chains, proof, and origin.</p>
+                    <p class="net-desc">Focused on supply chain verification, invoicing, and identity validation.</p>
+                    <ul class="net-list">
+                        <li>Inauthentic Claims</li>
+                        <li>Invoice Reviews</li>
+                        <li>Verification</li>
+                        <li>Supply Chain Audits</li>
+                    </ul>
                 </div>
-                
-                <div class="guardian-grid">
-                    <div class="guardian-card" style="--card-color: var(--color-royal);">
-                        <div class="guardian-inner">
-                            <div class="guardian-front">
-                                <div class="guardian-avatar-frame">
-                                    <div class="tech-corner top-left"></div>
-                                    <div class="tech-corner bottom-right"></div>
-                                    <img src="images/g-11.jpeg" alt="The Verifier" class="avatar-img">
-                                </div>
-                                <span class="service-name">Inauthentic Complaints</span>
-                                <h3>The Verifier</h3>
-                            </div>
-                            <div class="guardian-back">
-                                <h4>The Verifier</h4>
-                                <span class="guardian-role">Guardian of Authenticity</span>
-                                <p class="guardian-desc">Specializes in proving product authenticity and resolving devastating "Inauthentic Product" complaints.</p>
-                                <span class="protects-title">Protects Against:</span>
-                                <ul class="protects-list">
-                                    <li>Inauthentic Complaints</li>
-                                    <li>Authenticity Reviews</li>
-                                </ul>
-                                <a href="#contact" class="btn-summon" data-service="Authenticity Division">Get Expert Help</a>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="guardian-card" style="--card-color: var(--color-royal);">
-                        <div class="guardian-inner">
-                            <div class="guardian-front">
-                                <div class="guardian-avatar-frame">
-                                    <div class="tech-corner top-left"></div>
-                                    <div class="tech-corner bottom-right"></div>
-                                    <img src="images/g-12.jpeg" alt="The Custodian" class="avatar-img">
-                                </div>
-                                <span class="service-name">Product Authenticity</span>
-                                <h3>The Custodian</h3>
-                            </div>
-                            <div class="guardian-back">
-                                <h4>The Custodian</h4>
-                                <span class="guardian-role">Guardian of Product Legitimacy</span>
-                                <p class="guardian-desc">Rigorous safeguards for verification and critical documentation regarding product origin and legitimacy.</p>
-                                <span class="protects-title">Protects Against:</span>
-                                <ul class="protects-list">
-                                    <li>Authenticity Challenges</li>
-                                    <li>Origin Misunderstandings</li>
-                                </ul>
-                                <a href="#contact" class="btn-summon" data-service="Authenticity Division">Get Expert Help</a>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="guardian-card" style="--card-color: var(--color-royal);">
-                        <div class="guardian-inner">
-                            <div class="guardian-front">
-                                <div class="guardian-avatar-frame">
-                                    <div class="tech-corner top-left"></div>
-                                    <div class="tech-corner bottom-right"></div>
-                                    <img src="images/g-13.jpeg" alt="The Auditor" class="avatar-img">
-                                </div>
-                                <span class="service-name">Invoice Reviews</span>
-                                <h3>The Auditor</h3>
-                            </div>
-                            <div class="guardian-back">
-                                <h4>The Auditor</h4>
-                                <span class="guardian-role">Guardian of Supply Chains</span>
-                                <p class="guardian-desc">Performs deep forensic invoice audits and supply chain reviews to establish traceability and credibility.</p>
-                                <span class="protects-title">Protects Against:</span>
-                                <ul class="protects-list">
-                                    <li>Supply Chain Concerns</li>
-                                    <li>Invoice Audits</li>
-                                </ul>
-                                <a href="#contact" class="btn-summon" data-service="Authenticity Division">Get Expert Help</a>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="guardian-card" style="--card-color: var(--color-royal);">
-                        <div class="guardian-inner">
-                            <div class="guardian-front">
-                                <div class="guardian-avatar-frame">
-                                    <div class="tech-corner top-left"></div>
-                                    <div class="tech-corner bottom-right"></div>
-                                    <img src="images/g-17.jpeg" alt="The Steward" class="avatar-img">
-                                </div>
-                                <span class="service-name">Account Verification</span>
-                                <h3>The Steward</h3>
-                            </div>
-                            <div class="guardian-back">
-                                <h4>The Steward</h4>
-                                <span class="guardian-role">Guardian of Identity</span>
-                                <p class="guardian-desc">Safeguards and prepares critical Know-Your-Customer (KYC) documentation for identity verification challenges.</p>
-                                <span class="protects-title">Protects Against:</span>
-                                <ul class="protects-list">
-                                    <li>KYC Verification Issues</li>
-                                    <li>Verification Failure Risks</li>
-                                </ul>
-                                <a href="#contact" class="btn-summon" data-service="Authenticity Division">Get Expert Help</a>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="guardian-card" style="--card-color: var(--color-royal);">
-                        <div class="guardian-inner">
-                            <div class="guardian-front">
-                                <div class="guardian-avatar-frame">
-                                    <div class="tech-corner top-left"></div>
-                                    <div class="tech-corner bottom-right"></div>
-                                    <img src="images/g-18.jpeg" alt="The Herald" class="avatar-img">
-                            </div>
-                                <span class="service-name">Identity Appeals</span>
-                                <h3>The Herald</h3>
-                            </div>
-                            <div class="guardian-back">
-                                <h4>The Herald</h4>
-                                <span class="guardian-role">Guardian of Identity Appeals</span>
-                                <p class="guardian-desc">Resolves complex account verification failures and identity appeal challenges with evidence-based narratives.</p>
-                                <span class="protects-title">Protects Against:</span>
-                                <ul class="protects-list">
-                                    <li>Identity Appeal Challenges</li>
-                                    <li>Verification Rejections</li>
-                                </ul>
-                                <a href="#contact" class="btn-summon" data-service="Authenticity Division">Get Expert Help</a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <div class="division-category">
-                <div class="division-header" style="--div-theme: var(--color-gold);">
-                    <div class="div-line"></div>
+                <div class="network-card glass-panel border-top-gold">
                     <h3>Growth Division</h3>
-                    <p>Building authority, scaling operations, and global expansion.</p>
+                    <p class="net-desc">Focused on brand infrastructure, catalog management, and structural scaling.</p>
+                    <ul class="net-list">
+                        <li>Brand Registry</li>
+                        <li>Listing Optimization</li>
+                        <li>Global Expansion</li>
+                        <li>Business Strategy</li>
+                    </ul>
                 </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 4. THE GUARDIAN COMMAND CENTER (Circular Layout) -->
+    <section id="guardians" class="section-padding bg-surface">
+        <div class="container">
+            <div class="section-heading text-center reveal">
+                <h2>Guardian Command Center</h2>
+                <p>Our proprietary intelligence network. Specialized advisors engineered to navigate specific Amazon compliance frameworks.</p>
+            </div>
+
+            <div class="circular-layout reveal">
                 
-                <div class="guardian-grid">
-                    <div class="guardian-card" style="--card-color: var(--color-gold); --text-on-accent: var(--color-black);">
-                        <div class="guardian-inner">
-                            <div class="guardian-front">
-                                <div class="guardian-avatar-frame">
-                                    <div class="tech-corner top-left"></div>
-                                    <div class="tech-corner bottom-right"></div>
-                                    <img src="images/g-8.jpeg" alt="The Sovereign" class="avatar-img">
-                                </div>
-                                <span class="service-name">Brand Registry</span>
-                                <h3>The Sovereign</h3>
-                            </div>
-                            <div class="guardian-back">
-                                <h4>The Sovereign</h4>
-                                <span class="guardian-role">Guardian of Brand Authority</span>
-                                <p class="guardian-desc">Defends against generic brand issues and resolves critical challenges within Amazon's Brand Registry system.</p>
-                                <span class="protects-title" style="color: var(--color-gold);">Protects Against:</span>
-                                <ul class="protects-list">
-                                    <li>Generic Branding Issues</li>
-                                    <li>Brand Authority Risks</li>
-                                </ul>
-                                <a href="#contact" class="btn-summon" data-service="Growth Division">Get Expert Help</a>
-                            </div>
+                <!-- Left: Circular Rotating Network -->
+                <div class="orbit-container">
+                    <div class="orbit-ring">
+                        <!-- Central Core -->
+                        <div class="orbit-core">
+                            <img src="images/SI Logo.png" alt="Core" style="width:30px;">
+                        </div>
+                        
+                        <!-- Rotating Nodes placed mathematically on the circle -->
+                        <div class="orbit-node active" data-guardian="g-reinstator" style="top: 0%; left: 50%;">
+                            <div class="node-inner border-crimson"><img src="images/g-1.jpeg" alt="The Reinstator"></div>
+                        </div>
+                        <div class="orbit-node" data-guardian="g-nexus" style="top: 25%; left: 93.3%;">
+                            <div class="node-inner border-crimson"><img src="images/g-3.jpeg" alt="The Nexus"></div>
+                        </div>
+                        <div class="orbit-node" data-guardian="g-guardian" style="top: 75%; left: 93.3%;">
+                            <div class="node-inner border-royal"><img src="images/g-6.jpeg" alt="The Guardian"></div>
+                        </div>
+                        <div class="orbit-node" data-guardian="g-verifier" style="top: 100%; left: 50%;">
+                            <div class="node-inner border-silver"><img src="images/g-11.jpeg" alt="The Verifier"></div>
+                        </div>
+                        <div class="orbit-node" data-guardian="g-architect" style="top: 75%; left: 6.7%;">
+                            <div class="node-inner border-gold"><img src="images/g-7.jpeg" alt="The Architect"></div>
+                        </div>
+                        <div class="orbit-node" data-guardian="g-investigator" style="top: 25%; left: 6.7%;">
+                            <div class="node-inner border-crimson"><img src="images/g-2.jpeg" alt="The Investigator"></div>
                         </div>
                     </div>
+                </div>
 
-                    <div class="guardian-card" style="--card-color: var(--color-gold); --text-on-accent: var(--color-black);">
-                        <div class="guardian-inner">
-                            <div class="guardian-front">
-                                <div class="guardian-avatar-frame">
-                                    <div class="tech-corner top-left"></div>
-                                    <div class="tech-corner bottom-right"></div>
-                                    <img src="images/g-7.jpeg" alt="The Architect" class="avatar-img">
-                                </div>
-                                <span class="service-name">Business Scaling</span>
-                                <h3>The Architect</h3>
-                            </div>
-                            <div class="guardian-back">
-                                <h4>The Architect</h4>
-                                <span class="guardian-role">Guardian of Long-Term Success</span>
-                                <p class="guardian-desc">Establishes a foundational scaling matrix, focusing on structural business strategy and sustainable revenue expansion.</p>
-                                <span class="protects-title" style="color: var(--color-gold);">Protects Against:</span>
-                                <ul class="protects-list">
-                                    <li>Stagnant Growth</li>
-                                    <li>Operations Bottlenecks</li>
-                                </ul>
-                                <a href="#contact" class="btn-summon" data-service="Growth Division">Get Expert Help</a>
+                <!-- Right: Dynamic Display Panel -->
+                <div class="orbit-panel glass-panel">
+                    <div id="dynamic-guardian-content">
+                        <div class="g-header">
+                            <div class="g-title-stack">
+                                <span class="badge theme-crimson" id="panel-division">Recovery Division</span>
+                                <h3 id="panel-name">The Reinstator</h3>
                             </div>
                         </div>
-                    </div>
-
-                    <div class="guardian-card" style="--card-color: var(--color-gold); --text-on-accent: var(--color-black);">
-                        <div class="guardian-inner">
-                            <div class="guardian-front">
-                                <div class="guardian-avatar-frame">
-                                    <div class="tech-corner top-left"></div>
-                                    <div class="tech-corner bottom-right"></div>
-                                    <img src="images/g-5.jpeg" alt="The Pathfinder" class="avatar-img">
-                                </div>
-                                <span class="service-name">Listing Optimization</span>
-                                <h3>The Pathfinder</h3>
+                        <div class="g-body mt-4">
+                            <div class="detail-block">
+                                <h4>Mission</h4>
+                                <p id="panel-mission">Restoring suspended Amazon accounts through strategic investigation, documentation reviews, and appeal strategies.</p>
                             </div>
-                            <div class="guardian-back">
-                                <h4>The Pathfinder</h4>
-                                <span class="guardian-role">Guardian of Growth</span>
-                                <p class="guardian-desc">Unlocks advanced visibility strategies and solves complex listing performance optimization hurdles.</p>
-                                <span class="protects-title" style="color: var(--color-gold);">Protects Against:</span>
-                                <ul class="protects-list">
-                                    <li>Poor Visibility</li>
-                                    <li>Low Performance Listings</li>
+                            <div class="detail-block mt-3">
+                                <h4>Protection Areas</h4>
+                                <ul class="check-list" id="panel-best">
+                                    <li>Account Suspensions</li>
+                                    <li>Appeals & Reinstatements</li>
+                                    <li>Section 3 Reviews</li>
                                 </ul>
-                                <a href="#contact" class="btn-summon" data-service="Growth Division">Get Expert Help</a>
                             </div>
                         </div>
-                    </div>
-
-                    <div class="guardian-card" style="--card-color: var(--color-gold); --text-on-accent: var(--color-black);">
-                        <div class="guardian-inner">
-                            <div class="guardian-front">
-                                <div class="guardian-avatar-frame">
-                                    <div class="tech-corner top-left"></div>
-                                    <div class="tech-corner bottom-right"></div>
-                                    <img src="images/g-19.jpeg" alt="The Voyager" class="avatar-img">
-                                </div>
-                                <span class="service-name">Global Expansion</span>
-                                <h3>The Voyager</h3>
-                            </div>
-                            <div class="guardian-back">
-                                <h4>The Voyager</h4>
-                                <span class="guardian-role">Guardian of Expansion</span>
-                                <p class="guardian-desc">Uncovers and manages global market access opportunities while navigating multiple international matrices.</p>
-                                <span class="protects-title" style="color: var(--color-gold);">Protects Against:</span>
-                                <ul class="protects-list">
-                                    <li>Market Expansion Risks</li>
-                                    <li>Multiple Market Hurdles</li>
-                                </ul>
-                                <a href="#contact" class="btn-summon" data-service="Growth Division">Get Expert Help</a>
-                            </div>
+                        
+                        <div class="g-footer mt-4 border-top" style="padding-top:20px; display:flex; gap:10px; flex-wrap:wrap;">
+                            <a href="#review-form" class="btn-primary w-100">Deploy Guardian (Form)</a>
+                            <a href="https://calendar.google.com/calendar/u/0/appointments/schedules/AcZssZ3WyABW2iWadpXasRge3Z5XcCo_2MC0HCfRRQhxCbnhroVLRH-lx-yMl7uhLAwYrICViEHsN75z" target="_blank" class="btn-secondary w-100">Schedule Consultation</a>
                         </div>
                     </div>
+                </div>
 
-                    <div class="guardian-card" style="--card-color: var(--color-gold); --text-on-accent: var(--color-black);">
-                        <div class="guardian-inner">
-                            <div class="guardian-front">
-                                <div class="guardian-avatar-frame">
-                                    <div class="tech-corner top-left"></div>
-                                    <div class="tech-corner bottom-right"></div>
-                                    <img src="images/g-20.jpeg" alt="The Ascendant" class="avatar-img">
-                            </div>
-                                <span class="service-name">Business Strategy</span>
-                                <h3>The Ascendant</h3>
-                            </div>
-                            <div class="guardian-back">
-                                <h4>The Ascendant</h4>
-                                <span class="guardian-role">Guardian of Strategy</span>
-                                <p class="guardian-desc">Delivers visionary long-term growth roadmaps and resolves critical blind spots in business competitive edge.</p>
-                                <span class="protects-title" style="color: var(--color-gold);">Protects Against:</span>
-                                <ul class="protects-list">
-                                    <li>Growth Stagnation</li>
-                                    <li>Strategic Blind Spots</li>
-                                </ul>
-                                <a href="#contact" class="btn-summon" data-service="Growth Division">Get Expert Help</a>
-                            </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 5. THE SITUATION ROOM (Curiosity Accordions) -->
+    <section id="situation" class="section-padding">
+        <div class="container">
+            <div class="section-heading text-center reveal">
+                <h2>The Situation Room</h2>
+                <p>Educational Authority: Understand exactly what Amazon is reviewing before you submit an appeal. Click to reveal.</p>
+            </div>
+
+            <div class="curiosity-accordion reveal">
+                
+                <details class="sit-card glass-panel" open>
+                    <summary>
+                        <div class="sit-sum">
+                            <span class="icon theme-crimson">🚫</span>
+                            <h3>Account Suspended</h3>
+                        </div>
+                        <span class="s-toggle">+</span>
+                    </summary>
+                    <div class="sit-content border-top mt-3" style="padding-top:15px;">
+                        <h4>What Amazon Is Reviewing</h4>
+                        <p>Seller Performance is analyzing your metrics, defect rates, and recent buyer communications to determine policy compliance.</p>
+                        <h4 class="mt-3">Common Seller Mistakes</h4>
+                        <p>Submitting an emotional appeal. Blaming the customer. Not accepting responsibility in the Root Cause.</p>
+                        <h4 class="mt-3">Recommended Guardian</h4>
+                        <span class="badge theme-crimson">The Reinstator</span>
+                    </div>
+                </details>
+
+                <details class="sit-card glass-panel">
+                    <summary>
+                        <div class="sit-sum">
+                            <span class="icon theme-crimson">⚠️</span>
+                            <h3>Section 3 Review</h3>
+                        </div>
+                        <span class="s-toggle">+</span>
+                    </summary>
+                    <div class="sit-content border-top mt-3" style="padding-top:15px;">
+                        <h4>What Amazon Is Reviewing</h4>
+                        <p>Teams are looking for discrepancies in your identity, banking, supply chain, or tracking validation indicating potential fraud.</p>
+                        <h4 class="mt-3">Common Seller Mistakes</h4>
+                        <p>Forging or altering invoices. Creating a second account. Submitting retail receipts instead of commercial invoices.</p>
+                        <h4 class="mt-3">Recommended Guardian</h4>
+                        <span class="badge theme-crimson">The Investigator</span>
+                    </div>
+                </details>
+
+                <details class="sit-card glass-panel">
+                    <summary>
+                        <div class="sit-sum">
+                            <span class="icon theme-royal">🛡️</span>
+                            <h3>Intellectual Property Complaint</h3>
+                        </div>
+                        <span class="s-toggle">+</span>
+                    </summary>
+                    <div class="sit-content border-top mt-3" style="padding-top:15px;">
+                        <h4>What Amazon Is Reviewing</h4>
+                        <p>Notice-Dispute teams evaluate whether you have the legal right to sell an item, backed by a Letter of Authorization (LOA).</p>
+                        <h4 class="mt-3">Common Seller Mistakes</h4>
+                        <p>Deleting the listing and hoping the violation disappears. Submitting invalid retraction letters.</p>
+                        <h4 class="mt-3">Recommended Guardian</h4>
+                        <span class="badge theme-royal">The Guardian</span>
+                    </div>
+                </details>
+
+                <details class="sit-card glass-panel">
+                    <summary>
+                        <div class="sit-sum">
+                            <span class="icon theme-silver">🆔</span>
+                            <h3>Verification Failure</h3>
+                        </div>
+                        <span class="s-toggle">+</span>
+                    </summary>
+                    <div class="sit-content border-top mt-3" style="padding-top:15px;">
+                        <h4>What Amazon Is Reviewing</h4>
+                        <p>Internal teams are verifying your business entity, address, and personal identity against public records and banking systems.</p>
+                        <h4 class="mt-3">Common Seller Mistakes</h4>
+                        <p>Submitting documents with mismatched addresses. Providing screenshots instead of scanned PDFs.</p>
+                        <h4 class="mt-3">Recommended Guardian</h4>
+                        <span class="badge theme-silver">The Verifier</span>
+                    </div>
+                </details>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- 6. CASE INTELLIGENCE CENTER -->
+    <section id="case-intelligence" class="section-padding bg-surface">
+        <div class="container">
+            <div class="section-heading reveal">
+                <h2>Case Intelligence Center</h2>
+                <p>Verifiable evidence of successful enforcement resolutions and strategic outcomes.</p>
+            </div>
+
+            <div class="case-intel-layout reveal">
+                
+                <div class="case-gallery">
+                    <div class="gallery-frame glass-panel">
+                        <img id="case-img" src="images/R-1.jpg" alt="Case Document">
+                    </div>
+                </div>
+
+                <div class="case-selector">
+                    <div class="case-tabs border-bottom">
+                        <button class="c-tab active" data-case="suspension">Suspension</button>
+                        <button class="c-tab" data-case="section3">Section 3</button>
+                        <button class="c-tab" data-case="ip">IP Complaint</button>
+                        <button class="c-tab" data-case="verification">Verification</button>
+                    </div>
+                    
+                    <div class="case-details mt-4">
+                        <div class="c-row">
+                            <h4>PROBLEM</h4>
+                            <p id="c-prob">Account suspended due to ODR velocity mismatch. Funds frozen.</p>
+                        </div>
+                        <div class="c-row">
+                            <h4>INVESTIGATION</h4>
+                            <p id="c-inv">Identified a logistical bottleneck causing late shipments during Q4.</p>
+                        </div>
+                        <div class="c-row">
+                            <h4>STRATEGY</h4>
+                            <p id="c-strat">Drafted a structural POA outlining new 3PL integration and inventory buffering.</p>
+                        </div>
+                        <div class="c-row">
+                            <h4>OUTCOME</h4>
+                            <p id="c-out" class="theme-primary font-bold">Account restored within 72 hours.</p>
+                        </div>
+                        
+                        <div class="c-feedback mt-4 glass-panel" style="border-left: 2px solid var(--accent-gold); padding: 25px;">
+                            <div class="stars" style="color: var(--accent-gold); letter-spacing: 2px; margin-bottom: 10px; font-size: 14px;">★★★★★</div>
+                            <p id="c-quote" style="font-style: italic; font-size: 14px; margin-bottom: 10px;">"Helped us navigate a difficult suspension and get back to selling. The clarity they provided was exactly what we needed."</p>
+                            <span id="c-client" style="font-family: var(--font-head); font-size: 11px; text-transform: uppercase; color: var(--text-secondary);">- US MARKETPLACE SELLER</span>
                         </div>
                     </div>
                 </div>
             </div>
-
         </div>
     </section>
 
-    <section id="success-stories" class="content-section bg-black" style="border-top: 3px solid var(--color-silver);">
+    <!-- 7. WHO WE HELP -->
+    <section id="who-we-help" class="section-padding">
         <div class="container">
-            <div class="section-header" style="margin-bottom: 60px;">
-                <h2 class="title-white">SUCCESS STORIES</h2>
-                <div class="color-divider theme-royal"></div>
+            <div class="section-heading text-center reveal">
+                <h2>Who We Help</h2>
+                <p>We provide strategic advisory services across all Amazon business models.</p>
             </div>
             
-            <div class="metrics-grid">
-                
-                <div class="metric-card-glow">
-                    <div class="target-icon"><div class="target-dot"></div></div>
-                    <span class="metric-subtitle">BUSINESSES PROTECTED</span>
-                    <span class="metric-title">50+</span>
+            <div class="help-frame glass-panel reveal">
+                <span class="help-label">Supported Models:</span>
+                <div class="help-tags-wrapper">
+                    <div class="h-tag">Private Label Sellers</div>
+                    <div class="h-tag">Wholesale Sellers</div>
+                    <div class="h-tag">Retail Arbitrage</div>
+                    <div class="h-tag">International Sellers</div>
+                    <div class="h-tag">Emerging Brands</div>
+                    <div class="h-tag">Established Brands</div>
                 </div>
-
-                <div class="metric-card-glow">
-                    <div class="target-icon"><div class="target-dot"></div></div>
-                    <span class="metric-subtitle">ACCOUNTS REINSTATED</span>
-                    <span class="metric-title">50+</span>
-                </div>
-
-                <div class="metric-card-glow">
-                    <div class="target-icon"><div class="target-dot"></div></div>
-                    <span class="metric-subtitle">MARKETS SUPPORTED</span>
-                    <span class="metric-title">8+</span>
-                </div>
-
-                <div class="metric-card-glow">
-                    <div class="target-icon"><div class="target-dot"></div></div>
-                    <span class="metric-subtitle">HELPED BRANDS FROM 0-1</span>
-                    <span class="metric-title">10+</span>
-                </div>
-
             </div>
-
-            <div class="success-gallery-grid">
-                
-                <div class="gallery-card">
-                    <img src="images/R-1.jpg" alt="Mission Report 1">
-                </div>
-                <div class="gallery-card">
-                    <img src="images/R-2.jpg" alt="Mission Report 2">
-                </div>
-                <div class="gallery-card">
-                    <img src="images/R-3.jpg" alt="Mission Report 3">
-                </div>
-                <div class="gallery-card">
-                    <img src="images/R-4.jpg" alt="Mission Report 4">
-                </div>
-
-            </div>
-
         </div>
     </section>
 
-    <section id="faqs" class="content-section bg-maroon">
-        <div class="container">
-            <div class="section-header">
-                <h2>FAQs</h2>
-                <div class="color-divider theme-silver"></div>
+    <!-- 8. THE ADVISOR -->
+    <section id="advisor" class="section-padding bg-surface">
+        <div class="container advisor-layout reveal">
+            <div class="advisor-visual">
+                <div class="f-portrait glass-panel" style="background: url('images/D-1.jpeg') center/cover; min-height: 450px;"></div>
             </div>
             
-            <div class="faq-container">
+            <div class="advisor-content">
+                <span class="badge">Strategic Advisor</span>
+                <h2>Shivani Goyal</h2>
+                <h4 class="sub-h">Founder, Seller Integrity<br>Former Amazon Professional</h4>
                 
-                <details class="faq-item">
-                    <summary class="faq-question">
-                        <span>Q: Can you guarantee account reinstatement?</span>
-                        <span class="faq-icon">+</span>
-                    </summary>
-                    <p class="faq-answer">A: No. Amazon makes all final decisions regarding account status. Our role is to help sellers understand Amazon's concerns, identify root causes, and develop the strongest possible response strategy.</p>
-                </details>
+                <div class="advisor-bio">
+                    <p>After 9+ years supporting sellers within Amazon's Seller Partner Support (SPS) ecosystem, I saw how many businesses struggled to understand Amazon's enforcement decisions. The automated responses provide no real path forward.</p>
+                    <p>Seller Integrity was created to help sellers navigate those challenges with clarity, strategy, and practical guidance. We know what Amazon's performance and compliance teams are looking for, and we help you present your case professionally.</p>
+                </div>
 
-                <details class="faq-item">
-                    <summary class="faq-question">
-                        <span>Q: How quickly can you review my case?</span>
-                        <span class="faq-icon">+</span>
-                    </summary>
-                    <p class="faq-answer">A: Most cases can be reviewed within 24-48 hours after receiving the required information and documentation.</p>
-                </details>
+                <div class="advisor-timeline mt-4 border-top" style="padding-top:20px; display:flex; justify-content:space-between; font-size:10px; text-transform:uppercase; color:var(--text-secondary); font-family:var(--font-head); font-weight:600;">
+                    <span>Amazon Support</span>
+                    <span>Seller Operations</span>
+                    <span>Compliance Expertise</span>
+                    <span class="theme-primary">Seller Integrity</span>
+                </div>
 
-                <details class="faq-item">
-                    <summary class="faq-question">
-                        <span>Q: What information do you need to get started?</span>
-                        <span class="faq-icon">+</span>
-                    </summary>
-                    <p class="faq-answer">A: We typically require Amazon's notification, account details, relevant documentation, and a brief overview of the issue to conduct an initial assessment.</p>
-                </details>
-
-                <details class="faq-item">
-                    <summary class="faq-question">
-                        <span>Q: Can you help if my appeal has already been rejected?</span>
-                        <span class="faq-icon">+</span>
-                    </summary>
-                    <p class="faq-answer">A: Yes. Many sellers contact us after previous appeals have been unsuccessful. We review prior submissions, identify gaps, and help develop a stronger strategy.</p>
-                </details>
-
-                <details class="faq-item">
-                    <summary class="faq-question">
-                        <span>Q: Do you charge anything upfront to review my case?</span>
-                        <span class="faq-icon">+</span>
-                    </summary>
-                    <p class="faq-answer">A: No. We offer a complimentary initial case evaluation to understand your situation, review the available information, and determine whether we can assist. This allows you to gain clarity on your options before making any commitment.</p>
-                </details>
-
+                <div class="f-actions mt-4" style="display:flex; gap:15px; flex-wrap:wrap;">
+                    <a href="https://calendar.google.com/calendar/u/0/appointments/schedules/AcZssZ3WyABW2iWadpXasRge3Z5XcCo_2MC0HCfRRQhxCbnhroVLRH-lx-yMl7uhLAwYrICViEHsN75z" target="_blank" class="btn-primary">Schedule Strategy Session</a>
+                    <a href="https://www.linkedin.com/in/shivani-goyal-ecommerce" target="_blank" class="btn-linkedin">
+                        <svg viewBox="0 0 24 24" fill="currentColor" width="16" height="16" style="margin-right: 6px;"><path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/></svg>
+                        Connect on LinkedIn
+                    </a>
+                </div>
+                <p style="margin-top:15px; font-size:13px;">Email: <a href="mailto:support@sellerintegrity.com" style="text-decoration:underline; color:var(--text-primary);">support@sellerintegrity.com</a></p>
             </div>
         </div>
     </section>
 
-    <section id="contact" class="terminal-section bg-black">
+    <!-- 9. CLIENT JOURNEY -->
+    <section id="journey" class="section-padding">
         <div class="container">
-            <div class="terminal-container">
-                <div class="terminal-header">
-                    <h2 class="theme-silver">CONSULT A GUARDIAN</h2>
-                    <div class="color-divider theme-royal" style="margin: 20px auto;"></div>
-                    
-                    <div class="terminal-booking-cta">
-                        <p class="secure-sub">Ready to speak with an expert directly?</p>
-                        <a href="https://calendar.google.com/calendar/u/0/appointments/schedules/AcZssZ3WyABW2iWadpXasRge3Z5XcCo_2MC0HCfRRQhxCbnhroVLRH-lx-yMl7uhLAwYrICViEHsN75z" target="_blank" class="btn-calendar">📅 Schedule a Strategy Call</a>
-                    </div>
-                    
-                    <div class="form-divider">
-                        <span>OR SUBMIT A SECURE TICKET</span>
-                    </div>
-                    
-                    <p class="secure-sub" style="margin-bottom: 0; margin-top: 5px;">Select your required division. All communications are strictly confidential.</p>
+            <div class="section-heading text-center reveal">
+                <h2>The Client Journey</h2>
+                <p>A deterministic, transparent pathway to restoring your marketplace assets.</p>
+            </div>
+
+            <div class="journey-pathway reveal">
+                <div class="j-step">
+                    <div class="j-circle">1</div>
+                    <span>Submit Case</span>
                 </div>
+                <div class="j-line"></div>
                 
-                <form class="secure-form" id="contact-form" action="https://formspree.io/f/xnjylabl" method="POST">
-                    <div class="form-grid">
-                        <div class="input-group">
-                            <label>Name</label>
-                            <input type="text" name="name" required placeholder="Enter primary contact name">
+                <div class="j-step">
+                    <div class="j-circle">2</div>
+                    <span>Investigation</span>
+                </div>
+                <div class="j-line"></div>
+
+                <div class="j-step">
+                    <div class="j-circle">3</div>
+                    <span>Root Cause</span>
+                </div>
+                <div class="j-line"></div>
+
+                <div class="j-step">
+                    <div class="j-circle">4</div>
+                    <span>Strategy</span>
+                </div>
+                <div class="j-line"></div>
+
+                <div class="j-step">
+                    <div class="j-circle">5</div>
+                    <span>Submission</span>
+                </div>
+                <div class="j-line"></div>
+
+                <div class="j-step final">
+                    <div class="j-circle">6</div>
+                    <span>Resolution</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 10. REQUEST SPECIALIST REVIEW (Floating Labels Form) -->
+    <section id="review-form" class="section-padding bg-surface">
+        <div class="container">
+            <div class="section-heading text-center reveal">
+                <h2>Request Specialist Review</h2>
+                <p>Submit your details for a comprehensive case assessment.</p>
+            </div>
+
+            <div class="terminal-panel glass-panel reveal">
+                <form id="multi-step-form" action="https://formspree.io/f/xnjylabl" method="POST">
+                    
+                    <div class="form-progress">
+                        <div class="progress-track"><div class="progress-fill" id="form-progress"></div></div>
+                        <span class="step-indicator">Step <span id="step-num">1</span> of 4</span>
+                    </div>
+
+                    <!-- Step 1 -->
+                    <div class="form-step active" data-step="1">
+                        <h4>1. Issue Type</h4>
+                        <div class="radio-group">
+                            <label class="radio-btn"><input type="radio" name="issue" value="Suspension" required><span>Account Suspended</span></label>
+                            <label class="radio-btn"><input type="radio" name="issue" value="Section 3"><span>Section 3 Review</span></label>
+                            <label class="radio-btn"><input type="radio" name="issue" value="IP Claim"><span>IP / Policy Warning</span></label>
+                            <label class="radio-btn"><input type="radio" name="issue" value="Growth"><span>Verification / Brand</span></label>
                         </div>
-                        <div class="input-group">
-                            <label>Email Address</label>
-                            <input type="email" name="email" required placeholder="Enter secure email address">
+                        <button type="button" class="btn-primary next-btn mt-4 w-100">Next Step</button>
+                    </div>
+
+                    <!-- Step 2 -->
+                    <div class="form-step" data-step="2">
+                        <h4>2. Marketplace</h4>
+                        <div class="radio-group">
+                            <label class="radio-btn"><input type="radio" name="marketplace" value="North America" required><span>North America</span></label>
+                            <label class="radio-btn"><input type="radio" name="marketplace" value="Europe"><span>Europe / UK</span></label>
+                            <label class="radio-btn"><input type="radio" name="marketplace" value="Global"><span>Global</span></label>
                         </div>
-                        <div class="input-group">
-                            <label>Phone Number</label>
-                            <input type="tel" name="phone" required placeholder="Enter your contact number">
-                        </div>
-                        <div class="input-group">
-                            <label>Company Name</label>
-                            <input type="text" name="company" required placeholder="Enter your company name">
+                        <div class="form-actions mt-4">
+                            <button type="button" class="btn-secondary prev-btn w-100">Back</button>
+                            <button type="button" class="btn-primary next-btn w-100">Next Step</button>
                         </div>
                     </div>
 
-                    <div class="input-group drop-group">
-                        <label>Service Division Needed</label>
-                        <select name="service" id="guardian-select" required>
-                            <option value="" disabled selected>Select Required Service</option>
-                            <option value="Recovery Division">Recovery Division (Reinstatement, Section 3, Appeals)</option>
-                            <option value="Compliance Division">Compliance Division (Health Management, IP, Policy)</option>
-                            <option value="Authenticity Division">Authenticity Division (Inauthentic Claims, Invoices, Identity)</option>
-                            <option value="Growth Division">Growth Division (Brand Registry, Scaling, Optimization)</option>
-                        </select>
+                    <!-- Step 3 -->
+                    <div class="form-step" data-step="3">
+                        <h4>3. Urgency</h4>
+                        <div class="radio-group">
+                            <label class="radio-btn"><input type="radio" name="urgency" value="Critical" required><span class="theme-crimson font-bold">Deactivated</span></label>
+                            <label class="radio-btn"><input type="radio" name="urgency" value="High"><span>Listings Blocked</span></label>
+                            <label class="radio-btn"><input type="radio" name="urgency" value="Medium"><span>Warning Received</span></label>
+                        </div>
+                        <div class="form-actions mt-4">
+                            <button type="button" class="btn-secondary prev-btn w-100">Back</button>
+                            <button type="button" class="btn-primary next-btn w-100">Next Step</button>
+                        </div>
                     </div>
 
-                    <div class="input-group">
-                        <label>Describe your Amazon Account Situation</label>
-                        <textarea name="message" rows="5" required placeholder="Provide a brief overview of the issue or your business goals..."></textarea>
-                    </div>
+                    <!-- Step 4 (Floating Labels) -->
+                    <div class="form-step" data-step="4">
+                        <h4>4. Secure Contact Information</h4>
+                        
+                        <div class="floating-group">
+                            <input type="text" name="name" id="fname" class="floating-input" placeholder=" " required>
+                            <label for="fname" class="floating-label">Full Name</label>
+                        </div>
+                        
+                        <div class="floating-group">
+                            <input type="email" name="email" id="femail" class="floating-input" placeholder=" " required>
+                            <label for="femail" class="floating-label">Corporate Email Address</label>
+                        </div>
+                        
+                        <div class="floating-group">
+                            <input type="text" name="store" id="fstore" class="floating-input" placeholder=" " required>
+                            <label for="fstore" class="floating-label">Store / Brand Name</label>
+                        </div>
 
-                    <button type="submit" class="btn-submit">Request a Guardian Review</button>
+                        <div class="floating-group" style="margin-bottom:0;">
+                            <textarea name="summary" id="fsum" class="floating-input" placeholder=" " rows="2"></textarea>
+                            <label for="fsum" class="floating-label">Optional Case Summary</label>
+                        </div>
+
+                        <div class="form-actions mt-4">
+                            <button type="button" class="btn-secondary prev-btn w-100">Back</button>
+                            <button type="submit" class="btn-primary w-100">Submit Securely</button>
+                        </div>
+                    </div>
                 </form>
             </div>
+            
+            <div class="text-center mt-4 reveal">
+                <p style="font-size: 12px; color: var(--text-secondary); margin-bottom:10px;">Or skip the form and speak directly with an advisor:</p>
+                <a href="https://calendar.google.com/calendar/u/0/appointments/schedules/AcZssZ3WyABW2iWadpXasRge3Z5XcCo_2MC0HCfRRQhxCbnhroVLRH-lx-yMl7uhLAwYrICViEHsN75z" target="_blank" class="btn-secondary magnetic-btn">Schedule Consultation via Calendar</a>
+            </div>
         </div>
     </section>
 
-    <footer class="bg-navy">
-        <div class="container">
-            
-            <div class="footer-grid">
-                
-                <div class="footer-bio-col">
-                    <div class="founder-img-wrapper">
-                        <img src="images/D-1.jpeg" alt="Daniel Jacob - Founder of Seller Integrity" class="founder-img">
-                    </div>
-                    <div class="founder-bio">
-                        <h2 class="founder-name">Daniel Jacob</h2>
-                        <h3 class="founder-title theme-silver">Founder, Seller Integrity</h3>
-                        
-                        <p>Hello, I’m Daniel Jacob, Founder of Seller Integrity and a former Amazon professional with hands-on experience supporting sellers within Amazon's Selling Partner Support (SPS) ecosystem. Throughout my time working with Amazon sellers, I gained first-hand insight into the challenges businesses face when navigating account suspensions, policy violations, compliance reviews, and operational roadblocks.</p>
-                        
-                        <p>I founded Seller Integrity with a simple mission: to help sellers navigate complex Amazon challenges with transparency, professionalism, and strategic guidance. I believe that every account issue has a root cause, and every successful resolution begins with understanding the problem correctly before building a solution.</p>
-                        
-                        <p>As a certified Lean Six Sigma AI Yellow Belt, my approach combines operational expertise, structured root-cause analysis, and a customer-obsessed mindset to help sellers protect, restore, and strengthen their Amazon businesses. Whether you're facing a suspension, a compliance challenge, or simply looking to build a stronger foundation for long-term growth, my goal is to provide clear direction and practical solutions that help you move forward with confidence.</p>
-                        
-                        <p>At Seller Integrity, you're not just another case number. You're a business owner who has invested time, effort, and resources into building something valuable and I'm committed to helping you protect it.</p>
-                    </div>
+    <!-- FOOTER -->
+    <footer class="footer">
+        <div class="container footer-grid">
+            <div class="footer-brand">
+                <span class="logo-title">SELLER INTEGRITY</span>
+                <p>Protecting Amazon Sellers Through Experience, Strategy, and Compliance.</p>
+                <p style="margin-top:15px; font-size:13px; color:var(--text-primary);">
+                    Email: <a href="mailto:support@sellerintegrity.com">support@sellerintegrity.com</a>
+                </p>
+            </div>
+            <div class="footer-links-group">
+                <div class="footer-col">
+                    <h4>Divisions</h4>
+                    <a href="#guardians">Recovery</a>
+                    <a href="#guardians">Compliance</a>
+                    <a href="#guardians">Authenticity</a>
                 </div>
-
-                <div class="footer-links-col">
-                    <div class="footer-block">
-                        <h4 class="theme-silver">Quick Links</h4>
-                        <ul class="footer-nav">
-                            <li><a href="#who-are-we">Who Are We</a></li>
-                            <li><a href="#guardian-services">Divisions</a></li>
-                            <li><a href="#success-stories">Success Stories</a></li>
-                            <li><a href="#faqs">FAQs</a></li>
-                        </ul>
-                    </div>
-                    
-                    <div class="footer-block">
-                        <h4 class="theme-silver">Contact</h4>
-                        <p class="footer-contact-text">Ready to protect and scale your Amazon business?</p>
-                        <a href="mailto:support@sellerintegrity.com" class="email-link">support@sellerintegrity.com</a>
-                        
-                        <a href="https://calendar.google.com/calendar/u/0/appointments/schedules/AcZssZ3WyABW2iWadpXasRge3Z5XcCo_2MC0HCfRRQhxCbnhroVLRH-lx-yMl7uhLAwYrICViEHsN75z" target="_blank" class="linkedin-btn btn-schedule-footer">
-                            Schedule a Call
-                        </a>
-                        <a href="https://www.linkedin.com/in/daniel-jacob-24b260164" target="_blank" rel="noopener noreferrer" class="linkedin-btn">
-                            Connect on LinkedIn
-                        </a>
-                    </div>
+                <div class="footer-col">
+                    <h4>Company</h4>
+                    <a href="#advisor">Strategic Advisor</a>
+                    <a href="#case-intelligence">Case Intelligence</a>
+                    <a href="#review-form">Secure Intake</a>
                 </div>
             </div>
-
         </div>
-
-        <p class="copyright">&copy; 2026 Seller Integrity. All rights reserved. Amazon and its ecosystem are trademarked. This consultancy provides independent advisory protocols.</p>
+        <div class="container footer-bottom">
+            <p>&copy; 2026 Seller Integrity. Independent Advisory Firm.</p>
+            <div class="social-links">
+                <a href="https://www.linkedin.com/in/shivani-goyal-ecommerce" target="_blank">LinkedIn</a>
+            </div>
+        </div>
     </footer>
+
+    <!-- Sticky Mobile CTA -->
+    <div class="mobile-sticky-cta">
+        <a href="#review-form" class="btn-primary block-btn">Request Review</a>
+    </div>
 
     <script src="script.js"></script>
 </body>
