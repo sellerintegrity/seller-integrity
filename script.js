@@ -178,6 +178,7 @@ document.addEventListener('DOMContentLoaded', () => {
         missingDiv.innerHTML = mHtml;
     }
 
+    // Auto-update report if already visible
     issueCards.forEach(card => {
         card.addEventListener('click', () => {
             issueCards.forEach(c => c.classList.remove('active'));
@@ -221,7 +222,7 @@ document.addEventListener('DOMContentLoaded', () => {
     }
 
     /* =========================================
-       3. LIVING GUARDIAN COMMAND CENTER (Interactive Orbit)
+       3. LIVING GUARDIAN COMMAND CENTER 
        ========================================= */
 
     let currentRingAngle = 0;
